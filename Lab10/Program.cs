@@ -14,8 +14,6 @@ namespace Lab10
         /// </summary>
         static void Main()
         {
-            int year, month;
-            string? tempInput;
             int dayZ;
             string monthName;
 
@@ -23,12 +21,10 @@ namespace Lab10
 
             start:
             Console.Write("Enter a month in the year (e.g., 1 for Jan): ");
-            tempInput = Console.ReadLine();
-            month = Convert.ToInt32(tempInput);
+            int month = int.Parse(Console.ReadLine());
 
             Console.Write("Enter a year: ");
-            tempInput = Console.ReadLine();
-            year = Convert.ToInt32(tempInput);
+            int year = int.Parse(Console.ReadLine());
 
             //Switch statement to determine the number of days in the month
             //based on the month and year entered by the user.

@@ -11,20 +11,17 @@ namespace Lab10_The_Second
     {
         static void Main()
         {
-            int year, month, days;
-            string? tempInput;
+            int days;
             string monthName;
 
             //Prompts user for month and year, then converts input to integers.
 
             start:
             Console.Write("Enter a month in the year (e.g., 1 for Jan): ");
-            tempInput = Console.ReadLine();
-            month = Convert.ToInt32(tempInput);
+            int month = int.Parse(Console.ReadLine());
 
             Console.Write("Enter a year: ");
-            tempInput = Console.ReadLine();
-            year = Convert.ToInt32(tempInput);
+            int year = int.Parse(Console.ReadLine());
 
             //Uses two methods, which really just abstract switch statements, to determine the number of days in the month.
             //One method determines the number of days in the month based on the month and year entered by the user.

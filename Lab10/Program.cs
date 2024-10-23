@@ -21,6 +21,7 @@ namespace Lab10
 
             //Prompts user for month and year, then converts input to integers.
 
+            start:
             Console.Write("Enter a month in the year (e.g., 1 for Jan): ");
             tempInput = Console.ReadLine();
             month = Convert.ToInt32(tempInput);
@@ -40,7 +41,7 @@ namespace Lab10
                     monthName = "January";
                     dayZ = 31;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 2:
                     monthName = "February";
                     if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
@@ -53,59 +54,60 @@ namespace Lab10
                         dayZ = 28;
                         Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     }
-                    break;
+                    goto start;
                 case 3:
                     monthName = "March";
                     dayZ = 31;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 4:
                     monthName = "April";
                     dayZ = 30;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 5:
                     monthName = "May";
                     dayZ = 31;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 6:
                     monthName = "June";
                     dayZ = 30;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 7:
                     monthName = "July";
                     dayZ = 31;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 8:
                     monthName = "August";
                     dayZ = 31;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 9:
                     monthName = "September";
                     dayZ = 30;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 10:
                     monthName = "October";
                     dayZ = 31;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 11:
                     monthName = "November";
                     dayZ = 30;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 case 12:
                     monthName = "December";
                     dayZ = 31;
                     Console.WriteLine($"{monthName} {year} has {dayZ} days.");
-                    break;
+                    goto start;
                 default:
-                    break;
+                    Console.WriteLine("Invalid month.");
+                    goto start;
             }
 
 
@@ -113,7 +115,7 @@ namespace Lab10
         }
 
 
-
+        
     }
 
 }

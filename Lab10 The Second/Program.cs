@@ -17,6 +17,7 @@ namespace Lab10_The_Second
 
             //Prompts user for month and year, then converts input to integers.
 
+            start:
             Console.Write("Enter a month in the year (e.g., 1 for Jan): ");
             tempInput = Console.ReadLine();
             month = Convert.ToInt32(tempInput);
@@ -27,7 +28,7 @@ namespace Lab10_The_Second
 
             //Uses two methods, which really just abstract switch statements, to determine the number of days in the month.
             //One method determines the number of days in the month based on the month and year entered by the user.
-            //The other method gets the name of the month based on the month number.
+            //The second method gets the name of the month based on the month number.
             //I did this to attempt to make the code more readable as well as try and write more modular code.
 
             monthName = GetMonthName(month);
@@ -35,7 +36,7 @@ namespace Lab10_The_Second
 
             Console.WriteLine($"{monthName} {year} has {days} days.");
 
-
+            goto start;
         }
 
         /// <summary>
@@ -150,7 +151,7 @@ namespace Lab10_The_Second
                     monthName = "December";
                     break;
                 default:
-                    monthName = "Invalid";
+                    monthName = "Invalid month.";
                     break;
             }
 

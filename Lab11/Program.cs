@@ -18,7 +18,7 @@ namespace Lab11
 
             ///Prompts user for the number of sides and the length of each side, then converts input to integers.
             ///If the number of sides is less than 3 or the length of each side is less than 0, the program exits.
-
+            
             Console.Write("Enter the number of sides: ");
             int numSides = int.Parse(Console.ReadLine());
             if (numSides < 3)
@@ -36,6 +36,7 @@ namespace Lab11
             }
 
             Console.WriteLine($"The area of the polygon is: {CalculateRegularPolygonArea(numSides, sideLength)}");
+
         }
 
         /// <summary>

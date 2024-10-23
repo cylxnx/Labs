@@ -16,6 +16,8 @@ namespace Lab10_The_Second
 
             //Prompts user for month and year, then converts input to integers.
 
+            Console.Write("Cody's Incredible Day Finder");
+
             start:
             Console.Write("Enter a month in the year (e.g., 1 for Jan): ");
             int month = int.Parse(Console.ReadLine());

@@ -17,6 +17,8 @@ namespace Lab10
             int days;
             string monthLabel;
 
+            //Prompts user for month and year, then converts input to integers.
+
             Console.Write("Enter a month in the year (e.g., 1 for Jan): ");
             tempInput = Console.ReadLine();
             month = Convert.ToInt32(tempInput);
@@ -25,6 +27,9 @@ namespace Lab10
             tempInput = Console.ReadLine();
             year = Convert.ToInt32(tempInput);
 
+            //Switch statement to determine the number of days in the month
+            //based on the month and year entered by the user.
+            //If the month is February, checks if the year is a leap year.
 
             switch (month)
             {

@@ -38,6 +38,8 @@ namespace Lab05
             Console.WriteLine("velocity1 = " + velocity1 + " m/s");
             Console.WriteLine("time = " + time);
             Console.WriteLine("acceleration = " + acceleration + " m/s^2");
+
+          
         }
     }
 }

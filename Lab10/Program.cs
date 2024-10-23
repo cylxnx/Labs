@@ -3,7 +3,9 @@
 namespace Lab10
 {
     /// <summary>
-    /// Lab 10 Implementation
+    /// Lab 10 - Days in a Month
+    /// Simple program to determine the number of days in a month
+    /// based on the month and year entered by the user.
     /// </summary>
     internal class Program
     {
@@ -14,15 +16,15 @@ namespace Lab10
         {
             int year, month;
             string? tempInput;
-            int days;
-            string monthLabel;
+            int dayZ;
+            string monthName;
 
             //Prompts user for month and year, then converts input to integers.
 
             Console.Write("Enter a month in the year (e.g., 1 for Jan): ");
             tempInput = Console.ReadLine();
             month = Convert.ToInt32(tempInput);
-            
+
             Console.Write("Enter a year: ");
             tempInput = Console.ReadLine();
             year = Convert.ToInt32(tempInput);
@@ -31,75 +33,76 @@ namespace Lab10
             //based on the month and year entered by the user.
             //If the month is February, checks if the year is a leap year.
 
+
             switch (month)
             {
                 case 1:
-                    monthLabel = "January";
-                    days = 31;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "January";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 2:
-                    monthLabel = "February";
-                    if (year % 400 == 0 || year % 4 == 0 && year % 100 !=0)
+                    monthName = "February";
+                    if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
                     {
-                        days = 29;
-                        Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                        dayZ = 29;
+                        Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     }
                     else
                     {
-                        days = 28;
-                        Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                        dayZ = 28;
+                        Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     }
                     break;
                 case 3:
-                    monthLabel = "March";
-                    days = 31;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "March";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 4:
-                    monthLabel = "April";
-                    days = 30;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "April";
+                    dayZ = 30;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 5:
-                    monthLabel = "May";
-                    days = 31;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "May";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 6:
-                    monthLabel = "June";
-                    days = 30;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "June";
+                    dayZ = 30;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 7:
-                    monthLabel = "July";
-                    days = 31;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "July";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 8:
-                    monthLabel = "August";
-                    days = 31;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "August";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 9:
-                    monthLabel = "September";
-                    days = 30;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "September";
+                    dayZ = 30;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 10:
-                    monthLabel = "October";
-                    days = 31;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "October";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 11:
-                    monthLabel = "November";
-                    days = 30;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "November";
+                    dayZ = 30;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 case 12:
-                    monthLabel = "December";
-                    days = 31;
-                    Console.WriteLine($"{monthLabel} {year} has {days} days.");
+                    monthName = "December";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     break;
                 default:
                     break;
@@ -107,28 +110,11 @@ namespace Lab10
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
 
+
     }
+
 }
-    
+

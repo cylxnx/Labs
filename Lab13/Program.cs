@@ -5,6 +5,7 @@ using Lab13P;
 namespace Lab13
 {
     /// <summary>
+    /// Lab 13 - Pardon Me, May I Have a Double?
     /// Demonstrates using programmer defined static classes
     /// </summary>
     internal static class Program
@@ -13,7 +14,8 @@ namespace Lab13
         /// Program entry point
         /// </summary>
         static void Main()
-        {
+        {          
+
             #region declare variables
             bool a;
             byte b;
@@ -37,7 +39,7 @@ namespace Lab13
             c = Prompt.ForSByte("Enter a sbyte: ");
             d = Prompt.ForChar("Enter a char: ");
             e = Prompt.ForDecimal("Enter a decimal: ");
-            f = Prompt.ForDouble("Enter a double: ");
+            f = Prompt.ForDouble("Pardon me, may I have a double?: ");
             g = Prompt.ForFloat("Enter a float: ");
             h = Prompt.ForInt("Enter an int: ");
             i = Prompt.ForUInt("Enter an uint: ");

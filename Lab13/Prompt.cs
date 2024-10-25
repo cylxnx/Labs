@@ -5,7 +5,7 @@ namespace Lab13P
     /// <summary>
     /// Provides prompting methods for the console
     /// </summary>
-    internal static class Prompt
+    public static class Prompt
     {
 
         /// <summary>
@@ -40,8 +40,7 @@ namespace Lab13P
         public static string ForString(string message)
         {
             Console.Write(message);
-            string? input = Console.ReadLine();
-            return input;
+            return Console.ReadLine();
         }
 
         /// <summary>
@@ -96,7 +95,7 @@ namespace Lab13P
         /// Prompts the user for a long value and returns it
         /// </summary>
         /// <param name="message">message to print with prompt</param>
-        /// <returns>user input as a long</returns>
+        /// <returns long>user input as a long</returns>
         public static long ForLong(string message)
         {
             Console.Write(message);

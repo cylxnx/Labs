@@ -37,7 +37,7 @@ namespace Lab13
             c = Prompt.ForSByte("Enter a sbyte: ");
             d = Prompt.ForChar("Enter a char: ");
             e = Prompt.ForDecimal("Enter a decimal: ");
-            f = Prompt.ForDouble("Enter a double: ");
+            f = Prompt.ForDouble("Pardon me, may I have a double?: ");
             g = Prompt.ForFloat("Enter a float: ");
             h = Prompt.ForInt("Enter an int: ");
             i = Prompt.ForUInt("Enter an uint: ");

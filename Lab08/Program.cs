@@ -4,7 +4,7 @@
 namespace Lab08
 {
     /// <summary>
-    /// Temperature Converter
+    /// Lab08 Implementation
     /// </summary>
     internal class Program
     {
@@ -40,8 +40,7 @@ namespace Lab08
             {
                 Console.WriteLine(temperatureType + " is not a valid temperature type");
             }
-            
-            Console.WriteLine("\nPress Any Key To Exit");
+            Console.WriteLine("Press Any Key To Exit");
             Console.ReadKey();
         }
     }

@@ -50,7 +50,8 @@ namespace Lab15
         {
             Console.WriteLine(@"
                     Diablo still roams free in Hell, marshalling his demonic forces. 
-                    Only when he is beaten will our world finally have peace.");
+                    Only when he is beaten will our world finally have peace.
+                    That doesn't mean you should leave, though...");
             Console.WriteLine();
         }
         /// <summary>

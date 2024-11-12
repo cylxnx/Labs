@@ -14,8 +14,8 @@
             Console.WriteLine(@"
                     Hello, traveler! I am Deckard Cain. The last of the Horadrim, no
                     matter what Lorath Nahr may say. I am here to help you identify items. 
-                    Type 'help' for assistance with the items that I can identify
-                    or 'bye' to leave me standing by my cage for another 20 years.");
+                    If you are unsure of what item you would like identified, simply ask for
+                    'help'. If you choose to leave, be sure to say 'bye', but please...");
             Console.WriteLine();
             while (true)
             {

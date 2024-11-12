@@ -15,13 +15,13 @@
                     Hello, traveler! I am Deckard Cain. The last of the Horadrim, no
                     matter what Lorath Nahr may say. I am here to help you identify items. 
                     If you are unsure of what item you would like identified, simply ask for
-                    'help'. If you choose to leave, be sure to say 'bye', but please...");
+                    'help'. If you choose to leave, be sure to say 'goodbye', but please...");
             Console.WriteLine();
             while (true)
             {
                 string input = Deckard.Cain();
 
-                if (input.Equals("bye", StringComparison.OrdinalIgnoreCase))
+                if (input.Equals("goodbye", StringComparison.OrdinalIgnoreCase))
                 {
                     break;
                 }
@@ -47,7 +47,7 @@
                 }
                 else if (input.Equals("help", StringComparison.OrdinalIgnoreCase))
                 {
-                    Deckard.Plain();
+                    Deckard.Refrain();
                 }
                 else
                 {

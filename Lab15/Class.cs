@@ -93,15 +93,18 @@ namespace Lab15
         /// <summary>
         /// Deckard's response to pleas for help
         /// </summary>
-        public static void Plain()
+        public static void Refrain()
         {
             Console.WriteLine(@"
                     You seek knowledge, and I am here to provide it.
                 
                     DIABLO is a name that strikes fear into the hearts of many, poor WIRT was a tragic example of
-                    just how dangerous his hellspawn are. If you come across LORE and you seek knowledge, 
-                    seek me, DECKARD, and I will tell you what I can.... However, some things remain a mystery,
-                    such as my absence from D4. Now, perhaps you'll.... ");
+                    just how dangerous his hellspawn are. If you wish to know of the LORE of these lands, then you
+                    need only ask. There are things remain a mystery to even me, the absurdly wise DECKARD Cain.
+                    For example: a certain brilliant Horadrim's absence from D4. 
+                    I mean, they didn't even call. What's up with that? 
+                    
+                    Well, perhaps you'll.... ");
             Console.WriteLine();
 
         }

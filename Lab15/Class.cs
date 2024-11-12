@@ -1,4 +1,5 @@
-﻿namespace Lab15
+﻿
+namespace Lab15
 {
     /// <summary>
     /// Deckard Cain, the Horadric Scholar
@@ -7,12 +8,13 @@
     {
         /// <summary>
         /// The Horadric Scholar, Deckard Cain, queries the user for input
+        /// and returns the user's response string
         /// </summary>
-        /// <param name="message"></param>
         /// <returns>user input string</returns>
-        public static string Identify(string message)
+        public static string Cain()
         {
-            Console.Write(message);
+            Console.Write("" + "Stay a while, and listen!" +
+                    "\nAs a token of my gratitude, I will identify items for you at no charge: ");
             return Console.ReadLine();
         }
         /// <summary>
@@ -68,14 +70,25 @@
         /// <summary>
         /// Deckard's response to unknown input
         /// </summary>
-        public static void Cain()
+        public static void Pain()
         {
             Console.WriteLine(@"
                     I don’t know what you mean. 
-                    Soo.. stay a while and listen...");
+                           Soo....");
             Console.WriteLine();
         }
-
+        /// <summary>
+        /// Deckard talks about himself
+        /// </summary>
+        public static void Vain()
+        {
+            Console.WriteLine(@"
+                    As the last living Horadrim, I alone had the knowledge necessary to prevent Diablo
+                    from destroying all of mankind on numerous occasions. Though my ancestors often struggled
+                    against the Three Evils and their minions, I've always lived a shut-in, scholarly life.
+                    I'm glad that my wisdom aided you, might I suggest that you...");
+            Console.WriteLine();
+        }
     }
 }
 

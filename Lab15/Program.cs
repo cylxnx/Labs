@@ -4,11 +4,13 @@
     {
         static void Main()
         {
-            Console.WriteLine("Hello traveler. Stay a while, and listen!\n\n");
-
+            Console.WriteLine(@"
+                    Hello, traveler! I am Deckard Cain, the last of the Horadrim.
+                    I am here to help you identify items. Type 'bye' to leave.");
+            Console.WriteLine();
             while (true)
             {
-                string input = Deckard.Identify("As a token of my gratitude, I will identify items for you at no charge: ");
+                string input = Deckard.Cain();
 
                 if (input.Equals("bye", StringComparison.CurrentCultureIgnoreCase))
                 {
@@ -16,7 +18,7 @@
                 }
                 else if (input.Equals("wirt", StringComparison.CurrentCultureIgnoreCase))
                 {
-                   Deckard.Wirt();
+                    Deckard.Wirt();
                 }
                 else if (input.Equals("d4", StringComparison.CurrentCultureIgnoreCase))
                 {
@@ -30,9 +32,13 @@
                 {
                     Deckard.Lore();
                 }
+                else if (input.Equals("deckard", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    Deckard.Vain();
+                }
                 else
                 {
-                    Deckard.Cain();
+                    Deckard.Pain();
                 }
             }
 

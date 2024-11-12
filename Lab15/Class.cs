@@ -36,7 +36,9 @@
         {
             Console.WriteLine(@"
                     No, I am not slated to return for Diablo 4. 
-                            I am going into comedy.");
+                    I am going into comedy. Find me on open trumpet
+                    night at Khalim's Tankard. I will be the one
+                    with the lute and the lampshade on my head.");
             Console.WriteLine();
         }
         /// <summary>
@@ -55,6 +57,7 @@
         public static void Lore()
         {
             Console.WriteLine(@"
+                    You wish to know more of Tristram's dark history? Very well.
                     The tragic fall of Leoric was a harsh blow to this land. 
                     The people always loved the King, and now they live in mortal fear of him. 
                     The question that I keep asking myself is how he could have fallen so far from the Light, 
@@ -67,7 +70,10 @@
         /// </summary>
         public static void Cain()
         {
-            Console.WriteLine("\nI don’t know what you mean. Soo.. stay a while and listen.\n");
+            Console.WriteLine(@"
+                    I don’t know what you mean. 
+                    Soo.. stay a while and listen...");
+            Console.WriteLine();
         }
 
     }

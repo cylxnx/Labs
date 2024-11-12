@@ -84,10 +84,25 @@ namespace Lab15
         {
             Console.WriteLine(@"
                     As the last living Horadrim, I alone had the knowledge necessary to prevent Diablo
-                    from destroying all of mankind on numerous occasions. Though my ancestors often struggled
+                    from destroying all of Sanctuary on numerous occasions. Though my ancestors often struggled
                     against the Three Evils and their minions, I've always lived a shut-in, scholarly life.
-                    I'm glad that my wisdom aided you, might I suggest that you...");
+                    I'm glad that my wisdom has aided you, might I suggest that you...");
             Console.WriteLine();
+        }
+        /// <summary>
+        /// Deckard's response to pleas for help
+        /// </summary>
+        public static void Plain()
+        {
+            Console.WriteLine(@"
+                    You seek knowledge, and I am here to provide it.
+                
+                    DIABLO is a name that strikes fear into the hearts of many, poor WIRT was a tragic example of
+                    just how dangerous his hellspawn are. If you come across LORE and you seek knowledge, 
+                    seek me, DECKARD, and I will tell you what I can.... However, some things remain a mystery,
+                    such as my absence from D4. Now, perhaps you'll.... ");
+            Console.WriteLine();
+
         }
     }
 }

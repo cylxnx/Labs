@@ -102,9 +102,9 @@ namespace Lab15
                     just how dangerous his hellspawn are. If you wish to know of the LORE of these lands, then you
                     need only ask. There are things remain a mystery to even me, the absurdly wise DECKARD Cain.
                     For example: a certain brilliant Horadrim's absence from D4. 
-                    I mean, they didn't even call. What's up with that? 
+                    I mean, they did not even call. What's up with that? 
                     
-                    Well, perhaps you'll.... ");
+                    Well, perhaps you will.... ");
             Console.WriteLine();
 
         }

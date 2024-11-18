@@ -1,4 +1,6 @@
-﻿namespace Lab15
+﻿//Cody Lane
+//clane15@stumail.northeaststate.edu
+namespace Lab15
 {
     /// <summary>
     /// Lab 15 - Deckard Cain, the Horadric Scholar

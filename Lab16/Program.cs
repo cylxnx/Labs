@@ -16,12 +16,12 @@
             RollDice(d10Rolls, 10);
             RollDice(d12Rolls, 12);
             RollDice(d20Rolls, 20);
-            Console.WriteLine("D4: " + ArrayToString(d4Rolls));
-            Console.WriteLine("D6: " + ArrayToString(d6Rolls));
-            Console.WriteLine("D8: " + ArrayToString(d8Rolls));
-            Console.WriteLine("D10: " + ArrayToString(d10Rolls));
-            Console.WriteLine("D12: " + ArrayToString(d12Rolls));
-            Console.WriteLine("D20: " + ArrayToString(d20Rolls));
+            Console.WriteLine("D4: " + ArrayToString(d4Rolls) + "\n");
+            Console.WriteLine("D6: " + ArrayToString(d6Rolls) + "\n");
+            Console.WriteLine("D8: " + ArrayToString(d8Rolls) + "\n");
+            Console.WriteLine("D10: " + ArrayToString(d10Rolls) + "\n");
+            Console.WriteLine("D12: " + ArrayToString(d12Rolls) + "\n");
+            Console.WriteLine("D20: " + ArrayToString(d20Rolls) + "\n");
         }
         /// <summary>
         /// Uses Random to simulate a dice roll and returns the result

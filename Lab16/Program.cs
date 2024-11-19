@@ -1,7 +1,17 @@
-﻿namespace Lab16
+﻿//Cody Lane
+//clane15@stumail.northeaststate.edu
+namespace Lab16
 {
+    /// <summary>
+    /// Lab 16 - Dungeons & Dragons & Dice
+    /// An application that simulates rolling each type of die used in
+    /// Dungeons & Dragons
+    /// </summary>
     internal class Program
     {
+        /// <summary>
+        /// Program entry point
+        /// </summary>
         static void Main()
         {
             int[] d4Rolls = new int[4];

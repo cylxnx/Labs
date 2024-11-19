@@ -2,8 +2,16 @@
 //clane15@stumail.northeaststate.edu
 namespace Lab17
 {
+    /// <summary>
+    /// Lab 17 - The Most Generic Array Ever
+    /// Application that performs common operations on an array
+    /// via methods abstracted into ArrayFunc class
+    /// </summary>
     internal class Program
     {
+        /// <summary>
+        /// Program entry point
+        /// </summary>
         static void Main()
         {
             float[] array = new float[20];

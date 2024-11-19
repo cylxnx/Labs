@@ -24,32 +24,34 @@
             Console.WriteLine("D20: " + ArrayToString(d20Rolls));
         }
         /// <summary>
-        /// 
+        /// Uses Random to simulate a dice roll and returns the result
+        /// as an integer
         /// </summary>
-        /// <param name="sides"></param>
-        /// <returns></returns>
+        /// <param name="sides">number of sides on the dice</param>
+        /// <returns>dice roll as an int</returns>
         static int RollDice(int sides)
         {
             Random random = new Random();
             return random.Next(1, sides + 1);
         }
         /// <summary>
-        /// 
+        /// Uses RollDice to populate an array with dice rolls
         /// </summary>
-        /// <param name="diceRolls"></param>
-        /// <param name="sides"></param>
+        /// <param name="diceRolls">dice roll array</param>
+        /// <param name="sides">number of sides on the dice</param>
         static void RollDice(int[] diceRolls, int sides)
         {
+            if (diceRolls == null) return;
             for (int i = 0; i < diceRolls.Length; i++)
             {
                 diceRolls[i] = RollDice(sides);
             }
         }
         /// <summary>
-        /// 
+        /// Prints the contents of the dice roll array as a string
         /// </summary>
-        /// <param name="array"></param>
-        /// <returns></returns>
+        /// <param name="array">dice roll array</param>
+        /// <returns>contents of the array as a string</returns>
         static string ArrayToString(int[] array)
         {
             string result = "";

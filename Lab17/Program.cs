@@ -6,14 +6,29 @@
         {
             Console.WriteLine();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         static float Sum(float[] array)
         {
             return Sum(array);
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         static float Average(float[] array)
         {
             return Sum(array) / array.Length;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         static float Min(float[] array)
         {
             float min = array[0];
@@ -26,6 +41,11 @@
             }
             return min;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         static float Max(float[] array)
         {
             float max = array[0];
@@ -38,6 +58,13 @@
             }
             return max;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="index1"></param>
+        /// <param name="index2"></param>
+        /// <returns></returns>
         static float[] Swap(float[] array, int index1, int index2)
         {
             float temp = array[index1];
@@ -45,6 +72,11 @@
             array[index2] = temp;
             return array;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="numValues"></param>
+        /// <returns></returns>
         static int[] Fibonacci(int numValues)
         {
             int[] fib = new int[numValues];

@@ -23,13 +23,21 @@
             Console.WriteLine("D12: " + ArrayToString(d12Rolls));
             Console.WriteLine("D20: " + ArrayToString(d20Rolls));
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sides"></param>
+        /// <returns></returns>
         static int RollDice(int sides)
         {
             Random random = new Random();
             return random.Next(1, sides + 1);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="diceRolls"></param>
+        /// <param name="sides"></param>
         static void RollDice(int[] diceRolls, int sides)
         {
             for (int i = 0; i < diceRolls.Length; i++)
@@ -37,7 +45,11 @@
                 diceRolls[i] = RollDice(sides);
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         static string ArrayToString(int[] array)
         {
             string result = "";

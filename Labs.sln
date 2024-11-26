@@ -25,11 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab15", "Lab15\Lab15.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab14", "Lab14\Lab14.csproj", "{2947EEEC-13FE-42C5-90D6-665D9F5513D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab16", "Lab16\Lab16.csproj", "{45F38637-5177-4ABA-AF11-08D10B96ECE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab16", "Lab16\Lab16.csproj", "{45F38637-5177-4ABA-AF11-08D10B96ECE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab17", "Lab17\Lab17.csproj", "{101E7DB4-1F26-4864-89DB-4B76298632C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab17", "Lab17\Lab17.csproj", "{101E7DB4-1F26-4864-89DB-4B76298632C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab18", "Lab18\Lab18.csproj", "{A3B6709C-A580-429F-9375-A19C3D82180F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab19", "..\HotWeeWeeJefferson\Labs\Lab19\Lab19.csproj", "{232B0D05-D739-46B6-B9DD-1419ABCBB853}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{A3B6709C-A580-429F-9375-A19C3D82180F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3B6709C-A580-429F-9375-A19C3D82180F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3B6709C-A580-429F-9375-A19C3D82180F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{232B0D05-D739-46B6-B9DD-1419ABCBB853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232B0D05-D739-46B6-B9DD-1419ABCBB853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232B0D05-D739-46B6-B9DD-1419ABCBB853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232B0D05-D739-46B6-B9DD-1419ABCBB853}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

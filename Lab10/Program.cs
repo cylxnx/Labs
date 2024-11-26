@@ -3,7 +3,9 @@
 namespace Lab10
 {
     /// <summary>
-    /// Lab 10 Implementation
+    /// Lab 10 - Days in a Month
+    /// Simple program to determine the number of days in a month
+    /// based on the month and year entered by the user.
     /// </summary>
     internal class Program
     {
@@ -12,102 +14,107 @@ namespace Lab10
         /// </summary>
         static void Main()
         {
-            int year, month;
-            string? tempInput;
-            int days;
-            string monthLabel;
+            int dayZ;
+            string monthName;
 
-            Console.Write("Enter a month in the year (e.g., 1 for Jan): ");
-            tempInput = Console.ReadLine();
-            month = Convert.ToInt16(tempInput);
-            
+            //Prompts user for month and year, then converts input to integers.
+
+            Console.Write("Cody's Incredible Day Finder");
+
+            start:
+            Console.Write("\n\nEnter a month in the year (e.g., 1 for Jan): ");
+            int month = int.Parse(Console.ReadLine());
+
             Console.Write("Enter a year: ");
-            tempInput = Console.ReadLine();
-            year = Convert.ToInt16(tempInput);
+            int year = int.Parse(Console.ReadLine());
+
+            //Switch statement to determine the number of days in the month
+            //based on the month and year entered by the user.
+            //If the month is February, checks if the year is a leap year.
+
 
             switch (month)
             {
                 case 1:
-                    monthLabel = "January";
-                    days = 31;
-                    break;
+                    monthName = "January";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 2:
-                    monthLabel = "February";
-                    if (year % 400 == 0 || year % 4 && year % 100 != 0)
+                    monthName = "February";
+                    if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
                     {
-                        days = 29;
+                        dayZ = 29;
+                        Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     }
                     else
-                    { 
-                        days = 28;
+                    {
+                        dayZ = 28;
+                        Console.WriteLine($"{monthName} {year} has {dayZ} days.");
                     }
-                    break;
+                    goto start;
                 case 3:
-                    monthLabel = "March";
-                    days = 31;
-                    break;
+                    monthName = "March";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 4:
-                    monthLabel = "April";
-                    days = 30;
-                    break;
+                    monthName = "April";
+                    dayZ = 30;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 5:
-                    monthLabel = "May";
-                    days = 31;
-                    break;
+                    monthName = "May";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 6:
-                    monthLabel = "June";
-                    days = 30;
-                    break;
+                    monthName = "June";
+                    dayZ = 30;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 7:
-                    monthLabel = "July";
-                    days = 31;
-                    break;
+                    monthName = "July";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 8:
-                    monthLabel = "August";
-                    days = 31;
-                    break;
+                    monthName = "August";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 9:
-                    monthLabel = "September";
-                    days = 30;
-                    break;
+                    monthName = "September";
+                    dayZ = 30;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 10:
-                    monthLabel = "October";
-                    days = 31;
-                    break;
+                    monthName = "October";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 11:
-                    monthLabel = "November";
-                    days = 30;
-                    break;
+                    monthName = "November";
+                    dayZ = 30;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
                 case 12:
-                    monthLabel = "December";
-                    days = 31;
-                    break;
+                    monthName = "December";
+                    dayZ = 31;
+                    Console.WriteLine($"{monthName} {year} has {dayZ} days.");
+                    goto start;
+                default:
+                    Console.WriteLine("Invalid month.");
+                    goto start;
             }
 
-            string message = $"{monthLabel}{year}has{days}days";
-            Console.WriteLine(message);
-
-            
-        
-
-
-
-
-                
-
-
-
-
-
-
-
-
-
-
-
-            }
 
 
         }
+
+
+        
     }
+
 }
+
